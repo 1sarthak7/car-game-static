@@ -162,15 +162,15 @@ open http://localhost:8080
 
 ```mermaid
 graph TB
-    A["🎮 Game Loop<br/>(main.js)"] --> B["🌍 World System<br/>(world.js)"]
-    A --> C["🚗 Car Physics<br/>(car.js)"]
-    A --> D["🎥 Camera<br/>(camera.js)"]
-    A --> E["💫 PostProcessing<br/>(pipeline.js)"]
-    A --> F["🔊 Web Audio API"]
+    A[" Game Loop<br/>(main.js)"] --> B[" World System<br/>(world.js)"]
+    A --> C[" Car Physics<br/>(car.js)"]
+    A --> D[" Camera<br/>(camera.js)"]
+    A --> E[" PostProcessing<br/>(pipeline.js)"]
+    A --> F[" Web Audio API"]
     
-    B --> G["🌌 Sky Shader<br/>GLSL"]
-    B --> H["🛤️ Road Shader<br/>GLSL"]
-    C --> I["🔥 Heat Distortion<br/>GLSL"]
+    B --> G[" Sky Shader<br/>GLSL"]
+    B --> H[" Road Shader<br/>GLSL"]
+    C --> I[" Heat Distortion<br/>GLSL"]
     
     E --> J["UnrealBloomPass"]
     E --> K["FXAA"]
@@ -210,20 +210,20 @@ graph TB
 <div align="center">
 
 ```diff
-- ❌ Basic cube car with static camera
-+ ✅ Detailed car model with spoiler, cabin, and underbody neon glow
+-  Basic cube car with static camera
++  Detailed car model with spoiler, cabin, and underbody neon glow
 
-- ❌ No lighting or flat shading
-+ ✅ ACESFilmic tone mapping + soft shadows + street lights + bloom
+-  No lighting or flat shading
++  ACESFilmic tone mapping + soft shadows + street lights + bloom
 
-- ❌ No postprocessing
-+ ✅ UnrealBloom + FXAA + speed-reactive vignette pipeline
+-  No postprocessing
++  UnrealBloom + FXAA + speed-reactive vignette pipeline
 
-- ❌ No shaders
-+ ✅ 3 custom GLSL shaders (sky, road, heat distortion)
+-  No shaders
++  3 custom GLSL shaders (sky, road, heat distortion)
 
-- ❌ Tutorial-level code
-+ ✅ Production-grade ES module architecture
+-  Tutorial-level code
++  Production-grade ES module architecture
 ```
 
 </div>
@@ -236,11 +236,11 @@ graph TB
 
 | Browser | Status |
 |:---:|:---:|
-| Chrome 90+ | ✅ Full Support |
-| Firefox 90+ | ✅ Full Support |
-| Safari 15+ | ✅ Full Support |
-| Edge 90+ | ✅ Full Support |
-| Mobile Chrome | ⚠️ Touch controls not yet added |
+| Chrome 90+ |  Full Support |
+| Firefox 90+ |  Full Support |
+| Safari 15+ |  Full Support |
+| Edge 90+ | Full Support |
+| Mobile Chrome | Touch controls not yet added |
 
 </div>
 
@@ -260,15 +260,6 @@ Fork → Branch → Code → PR → 🎉
 
 ---
 
-<h2 align="center">📜 License</h2>
-
-<div align="center">
-
-This project is open source and available under the [MIT License](LICENSE).
-
-</div>
-
----
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=3000&pause=1000&color=44DDFF&center=true&vCenter=true&repeat=true&width=435&lines=Built+with+%E2%9D%A4%EF%B8%8F+by+%401sarthak7;Powered+by+Three.js+%2B+Custom+GLSL;Zero+dependencies.+Pure+web+magic." alt="Footer" />
